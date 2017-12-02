@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.tiwarithetiger11gmail.rajasthan.MainActivity">
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="150dp"
+        android:orientation="horizontal"
+        >
+        <TextView android:layout_height="30dp"
+            android:layout_width="45sp"
+            android:layout_weight="1"
+            android:text="Student Package"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:gravity="center"
+            ></TextView>
+
+        <TextView android:layout_height="30dp"
+            android:layout_width="45sp"
+            android:layout_weight="1"
+            android:text="Tradition"
+            android:textSize="18sp"
+            android:textColor="#000"
+            android:gravity="center"
+
+            ></TextView>
+
+
+    </LinearLayout>
+
+
+
+
+
+    <LinearLayout android:layout_width="match_parent" android:layout_height="150dp"
+        android:orientation="horizontal"
+        android:layout_marginTop="30dp">
+    <ImageView android:layout_height="120dp"
+        android:layout_width="45sp"
+        android:layout_weight="1"
+        android:src="@drawable/t1"
+        android:onClick="stud"
+    ></ImageView>
+
+        <ImageView android:layout_height="120dp"
+            android:layout_width="45sp"
+            android:layout_weight="1"
+            android:src="@drawable/t2"
+            android:onClick="trad"
+            ></ImageView>
+
+
+    </LinearLayout>
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="40dp"
+    android:layout_marginTop="150dp"
+    android:text="View Package's Bellow"
+    android:textSize="20dp"
+    android:textColor="#000"
+    android:textAlignment="center"/>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="200dp"
+        android:id="@+id/r_view"
+        android:background="#000"/>
+</RelativeLayout>
